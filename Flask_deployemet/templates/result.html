@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div id="maindiv">
+        <h2>{{ disease }} Prediction Result</h2>
+    {% if result %}
+        <p>Final Prediction: <strong>{{ result }}</strong></p>
+    {% elif error %}
+        <p>Error: {{ error }}</p>
+    {% endif %}
+    <a href="/">Home</a>
+    </div>
+</body>
+</html>

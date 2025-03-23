@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CKD Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ckd.css') }}">
+</head>
+<body>
+    <h2>Chronic Kidney Disease Prediction</h2>
+    <form action="/predict/Chronic Kidney Disease" method="post">
+        <input type="text" name="age" placeholder="Age" required>
+        <input type="text" name="bp" placeholder="Blood Pressure" required>
+        <input type="text" name="sg" placeholder="Specific Gravity" required>
+        <input type="text" name="al" placeholder="Albumin" required>
+        <input type="text" name="su" placeholder="Sugar" required>
+        <input type="text" name="rbc" placeholder="Red Blood Cells(normal=1 or abnormal=0)" required>
+        <input type="text" name="pc" placeholder="Pus Cell(normal=1 or abnormal=0)" required>
+        <input type="text" name="pcc" placeholder="Pus Cell Clumps(present=1 or notpresent=0)" required>
+        <input type="text" name="ba" placeholder="Bacteria(present=1 or notpresent=0)" required>
+        <input type="text" name="bgr" placeholder="Blood Glucose Random" required>
+        <input type="text" name="bu" placeholder="Blood Urea" required>
+        <input type="text" name="sc" placeholder="Serum Creatinine" required>
+        <input type="text" name="sod" placeholder="Sodium" required>
+        <input type="text" name="pot" placeholder="Potassium" required>
+        <input type="text" name="hemo" placeholder="Hemoglobin" required>
+        <input type="text" name="pcv" placeholder="Packed Cell Volume" required>
+        <input type="text" name="wbcc" placeholder="White Blood Cell Count" required>
+        <input type="text" name="rbcc" placeholder="Red Blood Cell Count" required>
+        <input type="text" name="htn" placeholder="Hypertension (no=0 or yes=1)" required>
+        <input type="text" name="dm" placeholder="Diabetes Mellitus (no=0 or yes=1)" required>
+        <input type="text" name="cad" placeholder="Coronary Artery Disease (no=0 or yes=1)" required>
+        <input type="text" name="appet" placeholder="Appetite (no=0 or yes=1)" required>
+        <input type="text" name="pe" placeholder="Pedal Edema (no=0 or yes=1)" required>
+        <input type="text" name="ane" placeholder="Anemia (no=0 or yes=1)" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

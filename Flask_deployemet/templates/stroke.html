@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stroke Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stroke.css') }}">
+</head>
+<body>
+    <h2>Stroke Prediction</h2>
+    <form action="/predict/Stroke" method="post">
+        <input type="text" name="gender" placeholder="Gender (Male=1 or Female=0)" required>
+        <input type="text" name="age" placeholder="Age" required>
+        <input type="text" name="hypertension" placeholder="Hypertension (0 or 1)" required>
+        <input type="text" name="heart_disease" placeholder="Heart Disease (0 or 1)" required>
+        <input type="text" name="ever_married" placeholder="Ever Married (no=0 or yes=1)" required>
+        <input type="text" name="work_type" placeholder="Work Type (Private=2,Self-employed=3,Govt Job=0,Children=1)" required>
+        <input type="text" name="Residence_type" placeholder="Residence Type (Urban=1,Rural=0)" required>
+        <input type="text" name="avg_glucose_level" placeholder="Average Glucose Level" required>
+        <input type="text" name="bmi" placeholder="BMI" required>
+        <input type="text" name="smoking_status" placeholder="Smoking Status (formerly smoked=1, never smoked=2,smokes=3)" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

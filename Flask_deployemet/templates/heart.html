@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='heart.css') }}">
+</head>
+<body>
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict/Heart Disease" method="post">
+        <input type="text" name="age" placeholder="Age" required>
+        <input type="text" name="sex" placeholder="Sex (Female=0,Male=1)" required>
+        <input type="text" name="chest_pain_type" placeholder="Chest Pain Type (Typical angina=3 or Atypical angina=1 or Non-anginal pain=2)" required>
+        <input type="text" name="resting_blood_pressure" placeholder="Resting Blood Pressure" required>
+        <input type="text" name="cholestoral" placeholder="Cholesterol" required>
+        <input type="text" name="fasting_blood_sugar" placeholder="Fasting Blood Sugar (Lower than 120 mg/ml = 1 or Greater than 120 mg/ml = 0)" required>
+        <input type="text" name="rest_ecg" placeholder="Rest ECG (ST-T wave abnormality = 2 or Normal=1 or Left ventricular hypertrophy=0)" required>
+        <input type="text" name="Max_heart_rate" placeholder="Max Heart Rate" required>
+        <input type="text" name="exercise_induced_angina" placeholder="Exercise Induced Angina (No=0 or Yes=1)" required>
+        <input type="text" name="oldpeak" placeholder="Oldpeak (Depression)" required>
+        <input type="text" name="slope" placeholder="Slope (Downsloping=0 or Upsloping=2 or Flat=1)" required>
+        <input type="text" name="vessels_colored_by_flourosopy" placeholder="Vessels Colored by Fluoroscopy(Two= 3 or Zero=4 or One=1 or Three=2 or Four=0)" required>
+        <input type="text" name="thalassemia" placeholder="Thalassemia (Reversable Defect=3 or Fixed Defect=0 or No=1 or Normal=2)" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
